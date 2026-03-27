@@ -109,7 +109,7 @@ jupyter notebook arabic_medical_question_classification.ipynb
 ```
 ▎Or use Google Colab
 ```python
-▎Upload the file to Colab and run cells in order
+Upload the file to Colab and run cells in order
 ```
 
 ### Step 3: Train Models
