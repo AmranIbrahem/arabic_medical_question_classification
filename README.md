@@ -26,7 +26,7 @@ C --> D[Tokenization]
 D --> E[Feature Extraction]
 E --> F[ML / DL Models]
 F --> G[Predicted Category]
-mermaid```
+flowchart```
 ---
 📊 Dataset
 📌 Source: Hugging Face (Shifaa Dataset)
