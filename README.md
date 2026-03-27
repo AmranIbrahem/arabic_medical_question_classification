@@ -19,6 +19,17 @@ Build an intelligent model capable of automatically classifying Arabic medical q
 - Improving the efficiency of electronic medical platforms
 - Supporting intelligent diagnosis and medical consultation systems
 
+## 🏗️ System Pipeline
+
+```mermaid
+flowchart LR
+A[Arabic Question] --> B[Cleaning]
+B --> C[Normalization]
+C --> D[Tokenization]
+D --> E[Feature Extraction]
+E --> F[Model]
+F --> G[Prediction]
+```
 ## 📊 Dataset
 - **Source:** Shifaa Arabic Medical Consultations from Hugging Face
 - **Size:** 84,422 medical questions
