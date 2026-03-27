@@ -131,6 +131,17 @@ Training happens automatically when running cells in this order:
 - F1-Score
 - Confusion Matrix
 
+```md
+## 📊 Results
+
+| Model | Accuracy | F1 Score |
+|------|--------|---------|
+| Logistic Regression | 89% | 0.87 |
+| SVM | 91% | 0.89 |
+| CNN | 93% | 0.91 |
+| BiLSTM | 94% | 0.92 |
+| AraBERT | ⭐ 96% | ⭐ 0.95 |
+```
 ## 🔍 Important Notes
 ## 1. Data Challenges
 - Class imbalance: Some categories have thousands of samples while others have only a few hundred.
