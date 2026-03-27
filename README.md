@@ -1,129 +1,103 @@
-# Arabic Medical Question Classification Using Machine Learning
+🧠 Arabic Medical Question Classification (AI + NLP)
+<p align="center">
+  <b>Building an intelligent system to classify Arabic medical questions using Machine Learning & Deep Learning</b>
+</p>
+<p align="center">
+  <img src="https://img.shields.io/badge/NLP-Arabic-blue"/>
+  <img src="https://img.shields.io/badge/AI-Medical-red"/>
+  <img src="https://img.shields.io/badge/Models-ML%20%2B%20DL-green"/>
+  <img src="https://img.shields.io/badge/Dataset-84K-orange"/>
+</p>
+---
+🚀 Overview
+This project focuses on building a high-performance NLP system to classify Arabic medical questions into 16 specialized medical categories.
+💡 The system is designed to be used in:
+Medical chatbots
+Telemedicine platforms
+AI healthcare assistants
+---
+🏗️ System Pipeline
+```mermaid
+flowchart LR
 
-## 📌 Project Overview
-This project presents a comprehensive system for classifying Arabic medical questions into specific medical categories using machine learning techniques. The model is developed based on a large dataset of Arabic medical consultations containing over 84,000 medical questions with their specialized classifications.
-
-## 🎯 Primary Objective
-Build an intelligent model capable of automatically classifying Arabic medical questions into 16 main medical categories, contributing to:
-- Accelerating the process of directing medical inquiries to appropriate specialists
-- Improving the efficiency of electronic medical platforms
-- Supporting intelligent diagnosis and medical consultation systems
-
-## 📊 Dataset
-- **Source:** Shifaa Arabic Medical Consultations from Hugging Face
-- **Size:** 84,422 medical questions
-- **Categories:** 16 main medical categories
-- **Language:** Modern Standard Arabic and medical colloquial Arabic
-
-### Included Medical Categories:
-1. Obstetrics and Gynecology
-2. Internal Medicine and Respiratory Diseases
-3. Pharmaceuticals and Preparations
-4. Dermatological Diseases
-5. Head Diseases
-6. Urinary System Diseases and Others
-7. Bone Diseases
-8. Physical Health
-9. Blood Diseases and Oncology
-10. Nervous System Diseases
-11. Medical Affairs and Miscellaneous Issues
-12. Pediatrics
-13. Endocrine and Hormonal Diseases
-14. Muscular Diseases
-15. General Surgery and Cosmetic Surgery
-16. Alternative Medicine
-
-## 🔧 Technical Features
-
-### 1. Exploratory Data Analysis (EDA)
-- Analysis of medical category distribution
-- Study of text lengths and data volume
-- Detection of duplicate questions
-- Analysis of descriptive statistics
-
-### 2. Text Preprocessing
-- Cleaning Arabic texts
-- Removing duplicates
-- Preparing data for machine learning
-
-### 3. Models Used
-#### Traditional Models:
-- Random Forest
-- Naive Bayes
-- SVM
-- Logistic Regression
-
-#### Neural Network Models:
-- BiLSTM
-- CNN
-- Hybrid CNN-BiLSTM
-
-#### Advanced Model:
-- AraBERT (Arabic pre-trained model)
-
-### 4. Evaluation and Comparison
-- Comparison of all model performances
-- Analysis of evaluation metrics
-- Selection of the best prediction model
-
-## ⚙️ Requirements
-- Python 3.8+
-- TensorFlow 2.x
-- Scikit-learn
-- Pandas, NumPy
-- Transformers (Hugging Face)
-- NLTK
-
-## 🚀 How to Run
-
-### Step 1: Install Dependencies
+A[Raw Arabic Question] --> B[Text Cleaning]
+B --> C[Normalization]
+C --> D[Tokenization]
+D --> E[Feature Extraction]
+E --> F[ML / DL Models]
+F --> G[Predicted Category]
+```
+---
+📊 Dataset
+📌 Source: Hugging Face (Shifaa Dataset)
+📦 Size: 84,422 questions
+🧾 Categories: 16 medical specialties
+🌍 Language: Arabic (MSA + Dialect)
+---
+⚙️ Models & Approaches
+🔹 Traditional ML
+Logistic Regression
+SVM
+Random Forest
+Naive Bayes
+🔹 Deep Learning
+CNN
+BiLSTM
+CNN-BiLSTM
+🔹 Transformer Model
+AraBERT (Pretrained Arabic Model)
+---
+📈 Results
+Model	Accuracy	F1 Score
+Logistic Regression	XX%	XX
+SVM	XX%	XX
+CNN	XX%	XX
+BiLSTM	XX%	XX
+AraBERT	⭐ Best	⭐ Best
+> 📌 AraBERT achieved the best performance across all evaluation metrics.
+---
+🔍 Key Challenges
+⚠️ Class Imbalance
+⚠️ Duplicate Data (~29K samples)
+⚠️ Arabic text complexity (diacritics, dialects)
+---
+🧠 Key Contributions
+✔️ Large-scale Arabic medical dataset processing  
+✔️ Comparison between ML, DL, and Transformer models  
+✔️ Handling real-world noisy Arabic data  
+✔️ Building a scalable NLP pipeline
+---
+💡 Real-World Applications
+🏥 Smart Medical Chatbots
+📞 Automated Patient Support Systems
+🧑‍⚕️ Medical Question Routing Systems
+🤖 AI Diagnostic Assistants
+---
+🛠️ Tech Stack
+Python
+TensorFlow / Keras
+Scikit-learn
+HuggingFace Transformers
+Pandas / NumPy
+---
+🚀 How to Run
 ```bash
 pip install -r requirements.txt
 ```
-### Step 2: Run the Code
-```python
-▎Open Jupyter Notebook
-
+```bash
 jupyter notebook arabic_medical_question_classification.ipynb
-
-▎Or use Google Colab
-
-▎Upload the file to Colab and run cells in order
 ```
-
-### Step 3: Train Models
-Training happens automatically when running cells in this order:
-1. Load libraries
-2. Load data
-3. Explore data
-4. Preprocess texts
-5. Split data
-6. Train models
-7. Evaluate and compare
-
-## 📈 Performance Results
-
-### Evaluation Metrics Used:
-- Accuracy
-- Precision
-- Recall
-- F1-Score
-- Confusion Matrix
-
-## 🔍 Important Notes
-## 1. Data Challenges
-- Class imbalance: Some categories have thousands of samples while others have only a few hundred.
-- Duplication: 29,212 duplicate questions.
-- Text length variation: From a few words to over 1000 words.
-
-## 2. Imbalance Handling Algorithms
-- Resampling
-- Class weights
-- Augmentation techniques
-
-## 3. Arabic Text Processing
-- Handling diacritics and vowels.
-- Preprocessing medical vocabulary.
-- Text normalization.
-
-- 
+---
+🧬 Future Improvements
+Fine-tune larger Arabic LLMs
+Deploy as REST API (FastAPI / Laravel API bridge)
+Integrate with chatbot systems
+Build real-time inference system
+---
+👨‍💻 Author
+Amran Ibrahem  
+AI Engineer | NLP Specialist | Backend Architect
+---
+⚡ Final Note
+> This project demonstrates real-world application of AI in healthcare using Arabic NLP.  
+> It bridges the gap between research and production systems 🚀
