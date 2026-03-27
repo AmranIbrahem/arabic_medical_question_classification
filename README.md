@@ -102,13 +102,13 @@ F --> G[Prediction]
 pip install -r requirements.txt
 ```
 ### Step 2: Run the Code
-```python
+
 ▎Open Jupyter Notebook
-
+```python
 jupyter notebook arabic_medical_question_classification.ipynb
-
+```
 ▎Or use Google Colab
-
+```python
 ▎Upload the file to Colab and run cells in order
 ```
 
